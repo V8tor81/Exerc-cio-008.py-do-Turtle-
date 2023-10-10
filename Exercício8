@@ -1,0 +1,27 @@
+#exercicio008.py
+
+"""
+Exercicios
+
+1) Acrescente cores
+acrecentei
+2) Mude a largura da linha
+mudei
+3) Aumente a quantidade de linhas
+aumentei
+"""
+
+import turtle
+import random
+
+turtle = turtle.Turtle()
+turtle.pensize(5)#Alterei a largura da linha
+
+colors = ['purple', 'blue', 'yellow', 'green', 'pink',"red","orange"]#Acrescenteicores
+for _ in range (12):#aumentei 4 linhas
+    color = random.choice(colors)
+    turtle.color(color)
+    turtle.forward(100)
+    turtle.backward(100)
+    turtle.right(30)#mudei o angulo para por mais setas
+#end
